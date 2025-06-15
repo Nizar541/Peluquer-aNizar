@@ -108,7 +108,7 @@
     .whatsapp-float:hover {
       transform: scale(1.1);
     }
-    /* Equipo sin foto */
+    /* Equipo */
     .team .card h3 {
       margin-top: 1rem;
       font-size: 1.5rem;
@@ -118,6 +118,28 @@
       font-size: 1rem;
       color: #555;
       margin-top: .3rem;
+    }
+    /* Tabla precios */
+    table {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-size: 1.1rem;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+    th {
+      background-color: #203a43;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
     }
   </style>
 </head>
@@ -168,18 +190,29 @@
 
 <section id="precios">
   <h2>Precios</h2>
-  <div class="info">
-    <p>Corte clásico: <strong>10 €</strong></p>
-    <p>Moderno con diseño: <strong>12 €</strong></p>
-    <p>Afeitado: <strong>6 €</strong></p>
-    <p>Tinte: <strong>15+ €</strong></p>
-  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Servicio</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Corte Hombre</td><td>10 €</td></tr>
+      <tr><td>Corte Niño</td><td>9 €</td></tr>
+      <tr><td>Corte Jubilado</td><td>10 €</td></tr>
+      <tr><td>Cortar y Afeitar</td><td>18 €</td></tr>
+      <tr><td>Cortar y Lavar</td><td>15 €</td></tr>
+      <tr><td>Cortar Barba</td><td>5 €</td></tr>
+    </tbody>
+  </table>
 </section>
 
 <section id="equipo">
   <h2>Equipo</h2>
   <div class="grid team" style="justify-content: center;">
     <div class="card" style="max-width: 300px; margin: auto;">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=300&q=80" alt="Mouhcine" />
       <h3>Mouhcine</h3>
       <p>Barbero & Estilista principal</p>
     </div>
@@ -238,4 +271,4 @@
 </footer>
 
 </body>
-	</html>
+</html>
